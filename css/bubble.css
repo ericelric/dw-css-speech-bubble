@@ -1,0 +1,44 @@
+@font-face { font-family: 'bodoni_handmade';
+             src: url('../font/BodEgyPro-Medium_Handmade.otf') format('opentype'); 
+}
+
+
+/*Erstellt den rechten Teil der Sprechblase und beinhaltet die Schrift. */
+.bubble_ver1 {
+	font: 30px 'bodoni_handmade' cursive;	
+	white-space: nowrap;
+	position: relative;
+	display: inline;
+	top: -600px;
+	left: 790px;
+	padding: .53em .53em .53em 0;
+	color: #fff;
+	border-style: solid;
+	border-width: .14em .14em .14em 0;
+	border-color: #fff #fff #fff transparent;
+}
+
+/*Erstellt den linken Teil der Sprechblase*/
+.bubble_ver1::before {
+	content: "";
+	position: absolute;
+	height: 1.34em;
+	top: -.14em;
+	left: -.67em;
+	padding: .53em .53em .53em 0;
+	color: #fff;
+	border-style: solid;
+	border-width: .14em 0 0 .14em;
+	border-color:  #fff transparent transparent #fff;
+}
+
+/*Fügt die Spitze der Sprechblase als SVG an.*/
+.bubble_ver1::after {
+	content: "";
+	position: absolute;
+	height: 1em;
+	width: 1em;
+	top: 2.26em;
+	left: -.67em;
+	background:url('../img/spitze_white.svg') no-repeat;
+}
