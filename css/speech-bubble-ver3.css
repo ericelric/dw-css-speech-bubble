@@ -1,0 +1,88 @@
+@font-face { font-family: 'bodoni_handmade';
+             src: url('../font/BodEgyPro-Medium_Handmade.otf') format('opentype'); 
+}
+
+/*Wrapper: adust bubble size and positoning */
+#position-bubble1 {
+	font-size: 30px;
+	position: absolute;
+	top: 175px;
+	left: 790px;
+}
+
+/*main class */
+.speech-bubble {
+	font-family: 'bodoni_handmade' cursive;	
+	color: #fff;
+	white-space: nowrap;
+	position: relative;
+	display: inline;
+	border-style: solid;
+}
+
+/*creates the bubble with a tip on the left side */
+.tip-left {
+	padding: .53em .53em .53em 0;
+	border-width: .14em .14em .14em 0;
+	border-color: #fff #fff #fff transparent;
+}
+.tip-left::before {
+	content: "";
+	position: absolute;
+	height: 1.4em;
+	top: -.14em;
+	left: -.67em;
+	padding: .53em .53em .53em 0;
+	border-style: solid;
+	border-width: .14em 0 0 .14em;
+	border-color:  #fff transparent transparent #fff;
+}
+.tip-left::after {
+	content: "";
+	position: absolute;
+	height: 1em;
+	width: 1em;
+	top: 2.26em;
+	left: -.67em;
+	background:url('../img/tip-white.svg') no-repeat;
+}
+
+/*creates the bubble with a tip on the right side */
+.tip-right {
+	padding: .53em 0 .53em .53em;
+	border-width: .14em 0 .14em .14em;
+	border-color: #fff transparent #fff #fff;
+}
+.tip-right::before {
+	content: "";
+	position: absolute;
+	height: 1.8em;
+	top: -.14em;
+	right: -.67em;
+	padding: .53em .53em 0 0;
+	border-style: solid;
+	border-width: .14em .14em 0  0 ;
+	border-color:  #fff #fff transparent transparent ;
+}
+.tip-right::after {
+	content: "";
+	position: absolute;
+	height: 1em;
+	width: 1em;
+	top: 2.26em;
+	right: -.67em;
+	background:url('../img/tip-white.svg') no-repeat;
+	-moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+/*creates the bubble without a tip */
+.tip-none {
+	padding: .53em;
+	border-width: .14em;
+	border-color: #fff;
+}

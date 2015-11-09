@@ -2,9 +2,11 @@
              src: url('../font/BodEgyPro-Medium_Handmade.otf') format('opentype'); 
 }
 
-/*Sprechblase mit SVG*/
+/*speech-bubble-ver1 */
+/*Sprechblase mit SVG */
 /*Erstellt den rechten Teil der Sprechblase und beinhaltet die Schrift. */
-.bubble_ver1 {
+
+.speech-bubble-ver1 {
 	font: 30px 'bodoni_handmade' cursive;	
 	white-space: nowrap;
 	position: relative;
@@ -19,7 +21,7 @@
 }
 
 /*Erstellt den linken Teil der Sprechblase*/
-.bubble_ver1::before {
+.speech-bubble-ver1::before {
 	content: "";
 	position: absolute;
 	height: 1.34em;
@@ -33,20 +35,21 @@
 }
 
 /*Fügt die Spitze der Sprechblase als SVG an.*/
-.bubble_ver1::after {
+.speech-bubble-ver1::after {
 	content: "";
 	position: absolute;
 	height: 1em;
 	width: 1em;
 	top: 2.26em;
 	left: -.67em;
-	background:url('../img/spitze_white.svg') no-repeat;
+	background:url('../img/tip-white.svg') no-repeat;
 }
 
 
-/*Sprechblase ohne SVG*/
+/*speech-bubble-ver2 */
+/*Sprechblase ohne SVG */
 /*Erstellt den rechten Teil der Sprechblase und beinhaltet die Schrift. */
-.bubble_ver2 {
+.speech-bubble-ver2 {
 	font: 30px 'bodoni_handmade' cursive;	
 	white-space: nowrap;
 	position: relative;
@@ -61,7 +64,7 @@
 }
 
 /*Erstellt den linken Teil der Sprechblase*/
-.bubble_ver2::before {
+.speech-bubble-ver2::before {
 	content: "";
 	position: absolute;
 	height: 1.34em;
@@ -75,7 +78,7 @@
 }
 
 /*Fügt die Spitze der Sprechblase an.*/
-.bubble_ver2::after {
+.speech-bubble-ver2::after {
 	content: "";
 	top: 1.63em;
 	left: -.67em;
