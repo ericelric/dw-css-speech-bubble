@@ -21,6 +21,6 @@ Newest version of the speech bubble. The tip is a scalable vector graphic. Its n
 Example:
 ```css
 <div id="position-bubble">
-	<div class="speech-bubble tip-left">Made wiht love!</div>
+	<div class="speech-bubble tip-left">Made with love!</div>
 </div>
 ```
