@@ -6,9 +6,11 @@ This is a demo of a responsive speech bubble.
 The tip is a scalable vector graphic (SVG) positioned in a pseudo element (::after).
 The speech bubble works best with a minimum font size of 30px.
 
+
 ###### index_ver2
 The tip is a skewed rectangle and works without any SVG. 
 But the connection point of the tip and box isn't perfect.
+
 
 ###### index_ver3
 Newest version of the speech bubble. The tip is a scalable vector graphic. Its now possible to select the tip direction.
